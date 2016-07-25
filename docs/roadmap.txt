@@ -1,0 +1,23 @@
+Cadastr ode Servidor
+ - Host
+ - User
+ - Pass/Key
+
+Cadastro de Conta AWS
+ - Crendentials
+
+Cadastro de Projeto
+ - Ambientes (PROD, HTML)
+ - Autodeploy (branch, tag)
+
+Criar Receita
+ - Escrever .php
+ - Before Code
+ - AfterCode
+ - Aquivo para HelthCheck
+
+Instalar Auto Deploy
+ - Conecatar na maquina via SSH
+ - Inserir o código
+ - Gerar Imagem
+ - Criar AutoDeploy Group

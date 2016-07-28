@@ -18,6 +18,11 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/project/new', 'Project\ProjectController@create');
-Route::post('/project/new', 'Project\ProjectController@save');
+
+Route::get('/projects/new', 'Project\ProjectController@create');
+Route::post('/projects/new', 'Project\ProjectController@save');
 Route::get('/projects', 'Project\ProjectController@index');
+
+Route::get('/servers/{projectId}/new/{serverId?}', 'Server\ServerController@create');
+Route::post('/servers/{projectId}/new/{serverId?}', 'Server\ServerController@save');
+Route::get('/servers/{projectId}', 'Server\ServerController@index');

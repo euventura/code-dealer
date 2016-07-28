@@ -13,4 +13,9 @@ class Project extends Model
     {
         return $this->belongsTo(\App\User::class);
     }
+
+    public function servers()
+    {
+        return $this->hasMany(\App\Server::class);
+    }
 }

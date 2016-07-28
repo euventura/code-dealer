@@ -15,11 +15,15 @@
     			</div>
                 <div class="pr2-social centered">
 					<a href="#" alt="deploy" title="deploy"><i class="fa fa-cloud-upload"></i></a>
-					<a href="#" alt="history log" title="history log"><i class="fa fa-history"></i></a>
-					<a href="#" alt="configurations" title="configurations"><i class="fa fa-gear"></i></a>
+					<a href="{{ url('/servers', $project->id)  }}" alt="Server Configuration" title="Server Configuration"><i class="fa fa-cloud"></i></a>
+                    <a href="#" alt="Recipie Configuration" title="Recipie Configuration"><i class="fa fa-book"></i></a>
+                    <a href="#" alt="Hooks Configuration" title="Hooks Configuration"><i class="fa fa-bullhorn"></i></a>
+                    <a href="#" alt="history log" title="history log"><i class="fa fa-history"></i></a>
 				</div>
     		</div><!-- --/content-panel ---->
     	</div>
     @endforeach
+
+    @include('components/addnew', ['title' => 'project', 'url' =>  url('/projects/new')  ])
 </div>
 @endsection

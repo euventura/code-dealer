@@ -16,7 +16,7 @@
                 <div class="pr2-social centered">
 					<a href="#" alt="deploy" title="deploy"><i class="fa fa-cloud-upload"></i></a>
 					<a href="{{ url('/servers', $project->id)  }}" alt="Server Configuration" title="Server Configuration"><i class="fa fa-cloud"></i></a>
-                    <a href="#" alt="Recipie Configuration" title="Recipie Configuration"><i class="fa fa-book"></i></a>
+                    <a href="{{ url('/recipes', $project->id)  }}" alt="Recipie Configuration" title="Recipie Configuration"><i class="fa fa-book"></i></a>
                     <a href="#" alt="Hooks Configuration" title="Hooks Configuration"><i class="fa fa-bullhorn"></i></a>
                     <a href="#" alt="history log" title="history log"><i class="fa fa-history"></i></a>
 				</div>

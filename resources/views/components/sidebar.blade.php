@@ -6,7 +6,7 @@
 </li>
 
 <li class="mt">
-    <a href="index.html">
+    <a href="{{ url('/projects') }}">
         <i class="fa fa-dashboard"></i>
         <span>Projects</span>
     </a>
